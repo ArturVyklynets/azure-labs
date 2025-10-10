@@ -1,0 +1,161 @@
+{
+  "version": 4,
+  "terraform_version": "1.13.3",
+  "serial": 19,
+  "lineage": "33ce0134-a8d2-e9bd-77bb-1255ba692299",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azuread_invitation",
+      "name": "external_user",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azuread\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "c572cfb1-1e9b-46eb-99ae-7e4f3d93e900",
+            "message": [
+              {
+                "additional_recipients": null,
+                "body": "Welcome to Azure and our group project",
+                "language": ""
+              }
+            ],
+            "redeem_url": "https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d6bb61323-3f07-4514-a5ce-b8b26fb80b3a%26user%3dc572cfb1-1e9b-46eb-99ae-7e4f3d93e900%26ticket%3dgGu%25252fh4g1gMzhhFgsBHyRp9HC3IP5LS%25252bXFSSgvPRRTgA%25253d%26ver%3d2.0",
+            "redirect_url": "https://portal.azure.com",
+            "timeouts": null,
+            "user_display_name": "ArtuPNUAcc",
+            "user_email_address": "artur.vyklynets.22@pnu.edu.ua",
+            "user_id": "1fdb83cd-9eb7-4fef-8eab-c108f6f4bd21",
+            "user_type": "Guest"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJyZWFkIjozMDAwMDAwMDAwMDB9fQ=="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azuread_user",
+      "name": "az104_user1",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azuread\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "about_me": "",
+            "account_enabled": true,
+            "age_group": "",
+            "business_phones": [],
+            "city": "",
+            "company_name": "",
+            "consent_provided_for_minor": "",
+            "cost_center": "",
+            "country": "",
+            "creation_type": "",
+            "department": "IT",
+            "disable_password_expiration": false,
+            "disable_strong_password": false,
+            "display_name": "az104-user1",
+            "division": "",
+            "employee_hire_date": "",
+            "employee_id": "",
+            "employee_type": "",
+            "external_user_state": "",
+            "fax_number": "",
+            "force_password_change": false,
+            "given_name": "",
+            "id": "/users/3e8d573f-d160-4ead-a9f9-8e80ba72fbb2",
+            "im_addresses": [],
+            "job_title": "IT Lab Administrator",
+            "mail": "",
+            "mail_nickname": "az104-user1",
+            "manager_id": "",
+            "mobile_phone": "",
+            "object_id": "3e8d573f-d160-4ead-a9f9-8e80ba72fbb2",
+            "office_location": "",
+            "onpremises_distinguished_name": "",
+            "onpremises_domain_name": "",
+            "onpremises_immutable_id": "",
+            "onpremises_sam_account_name": "",
+            "onpremises_security_identifier": "",
+            "onpremises_sync_enabled": false,
+            "onpremises_user_principal_name": "",
+            "other_mails": null,
+            "password": "@nk(5P#\u003cDBWv",
+            "postal_code": "",
+            "preferred_language": "",
+            "proxy_addresses": [],
+            "show_in_address_list": true,
+            "state": "",
+            "street_address": "",
+            "surname": "",
+            "timeouts": null,
+            "usage_location": "US",
+            "user_principal_name": "az104-user1@artur2005456gmail327.onmicrosoft.com",
+            "user_type": ""
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "password"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJyZWFkIjozMDAwMDAwMDAwMDAsInVwZGF0ZSI6MzAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIxIn0=",
+          "dependencies": [
+            "random_password.user_password"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "random_password",
+      "name": "user_password",
+      "provider": "provider[\"registry.terraform.io/hashicorp/random\"]",
+      "instances": [
+        {
+          "schema_version": 3,
+          "attributes": {
+            "bcrypt_hash": "$2a$10$YeSPWKrIKvSqE.kPwtNXju59xUCsSA2PZT/0tPp3LWOqua1aCRDHe",
+            "id": "none",
+            "keepers": null,
+            "length": 12,
+            "lower": true,
+            "min_lower": 0,
+            "min_numeric": 0,
+            "min_special": 0,
+            "min_upper": 0,
+            "number": true,
+            "numeric": true,
+            "override_special": null,
+            "result": "@nk(5P#\u003cDBWv",
+            "special": true,
+            "upper": true
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "bcrypt_hash"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "result"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
