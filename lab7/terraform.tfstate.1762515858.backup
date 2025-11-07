@@ -1,0 +1,270 @@
+{
+  "version": 4,
+  "terraform_version": "1.13.3",
+  "serial": 87,
+  "lineage": "7dedcfc6-ce46-8433-2775-f59c866680b7",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "data",
+      "type": "http",
+      "name": "my_ip",
+      "provider": "provider[\"registry.terraform.io/hashicorp/http\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "body": "213.109.232.21",
+            "ca_cert_pem": null,
+            "client_cert_pem": null,
+            "client_key_pem": null,
+            "id": "https://api.ipify.org",
+            "insecure": null,
+            "method": null,
+            "request_body": null,
+            "request_headers": null,
+            "request_timeout_ms": null,
+            "response_body": "213.109.232.21",
+            "response_body_base64": "MjEzLjEwOS4yMzIuMjE=",
+            "response_headers": {
+              "Cf-Cache-Status": "DYNAMIC",
+              "Cf-Ray": "99ac70b1e8efeeba-WAW",
+              "Content-Type": "text/plain",
+              "Date": "Fri, 07 Nov 2025 11:20:14 GMT",
+              "Server": "cloudflare",
+              "Vary": "Origin"
+            },
+            "retry": null,
+            "status_code": 200,
+            "url": "https://api.ipify.org"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "rg",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/fb4f5919-9463-4245-877b-00a9eb54113c/resourceGroups/az104-rg7",
+            "location": "eastus",
+            "managed_by": "",
+            "name": "az104-rg7",
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_storage_account",
+      "name": "storage",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "status": "tainted",
+          "schema_version": 4,
+          "attributes": {
+            "access_tier": null,
+            "account_kind": "StorageV2",
+            "account_replication_type": "GRS",
+            "account_tier": "Standard",
+            "allow_nested_items_to_be_public": false,
+            "allowed_copy_scope": null,
+            "azure_files_authentication": [],
+            "blob_properties": [
+              {
+                "change_feed_enabled": false,
+                "change_feed_retention_in_days": 0,
+                "container_delete_retention_policy": [],
+                "cors_rule": [],
+                "default_service_version": "",
+                "delete_retention_policy": [
+                  {
+                    "days": 7,
+                    "permanent_delete_enabled": false
+                  }
+                ],
+                "last_access_time_enabled": false,
+                "restore_policy": [],
+                "versioning_enabled": false
+              }
+            ],
+            "cross_tenant_replication_enabled": false,
+            "custom_domain": [],
+            "customer_managed_key": [],
+            "default_to_oauth_authentication": false,
+            "dns_endpoint_type": "Standard",
+            "edge_zone": null,
+            "https_traffic_only_enabled": true,
+            "id": "/subscriptions/fb4f5919-9463-4245-877b-00a9eb54113c/resourceGroups/az104-rg7/providers/Microsoft.Storage/storageAccounts/az104stralabcldvyklynets",
+            "identity": [],
+            "immutability_policy": [],
+            "infrastructure_encryption_enabled": false,
+            "is_hns_enabled": false,
+            "large_file_share_enabled": null,
+            "local_user_enabled": true,
+            "location": "eastus",
+            "min_tls_version": "TLS1_2",
+            "name": "az104stralabcldvyklynets",
+            "network_rules": [
+              {
+                "bypass": [
+                  "AzureServices"
+                ],
+                "default_action": "Deny",
+                "ip_rules": [
+                  "213.109.232.21"
+                ],
+                "private_link_access": [],
+                "virtual_network_subnet_ids": []
+              }
+            ],
+            "nfsv3_enabled": false,
+            "primary_access_key": null,
+            "primary_blob_connection_string": null,
+            "primary_blob_endpoint": null,
+            "primary_blob_host": null,
+            "primary_blob_internet_endpoint": null,
+            "primary_blob_internet_host": null,
+            "primary_blob_microsoft_endpoint": null,
+            "primary_blob_microsoft_host": null,
+            "primary_connection_string": null,
+            "primary_dfs_endpoint": null,
+            "primary_dfs_host": null,
+            "primary_dfs_internet_endpoint": null,
+            "primary_dfs_internet_host": null,
+            "primary_dfs_microsoft_endpoint": null,
+            "primary_dfs_microsoft_host": null,
+            "primary_file_endpoint": null,
+            "primary_file_host": null,
+            "primary_file_internet_endpoint": null,
+            "primary_file_internet_host": null,
+            "primary_file_microsoft_endpoint": null,
+            "primary_file_microsoft_host": null,
+            "primary_location": null,
+            "primary_queue_endpoint": null,
+            "primary_queue_host": null,
+            "primary_queue_microsoft_endpoint": null,
+            "primary_queue_microsoft_host": null,
+            "primary_table_endpoint": null,
+            "primary_table_host": null,
+            "primary_table_microsoft_endpoint": null,
+            "primary_table_microsoft_host": null,
+            "primary_web_endpoint": null,
+            "primary_web_host": null,
+            "primary_web_internet_endpoint": null,
+            "primary_web_internet_host": null,
+            "primary_web_microsoft_endpoint": null,
+            "primary_web_microsoft_host": null,
+            "provisioned_billing_model_version": null,
+            "public_network_access_enabled": true,
+            "queue_encryption_key_type": "Service",
+            "queue_properties": null,
+            "resource_group_name": "az104-rg7",
+            "routing": null,
+            "sas_policy": [],
+            "secondary_access_key": null,
+            "secondary_blob_connection_string": null,
+            "secondary_blob_endpoint": null,
+            "secondary_blob_host": null,
+            "secondary_blob_internet_endpoint": null,
+            "secondary_blob_internet_host": null,
+            "secondary_blob_microsoft_endpoint": null,
+            "secondary_blob_microsoft_host": null,
+            "secondary_connection_string": null,
+            "secondary_dfs_endpoint": null,
+            "secondary_dfs_host": null,
+            "secondary_dfs_internet_endpoint": null,
+            "secondary_dfs_internet_host": null,
+            "secondary_dfs_microsoft_endpoint": null,
+            "secondary_dfs_microsoft_host": null,
+            "secondary_file_endpoint": null,
+            "secondary_file_host": null,
+            "secondary_file_internet_endpoint": null,
+            "secondary_file_internet_host": null,
+            "secondary_file_microsoft_endpoint": null,
+            "secondary_file_microsoft_host": null,
+            "secondary_location": null,
+            "secondary_queue_endpoint": null,
+            "secondary_queue_host": null,
+            "secondary_queue_microsoft_endpoint": null,
+            "secondary_queue_microsoft_host": null,
+            "secondary_table_endpoint": null,
+            "secondary_table_host": null,
+            "secondary_table_microsoft_endpoint": null,
+            "secondary_table_microsoft_host": null,
+            "secondary_web_endpoint": null,
+            "secondary_web_host": null,
+            "secondary_web_internet_endpoint": null,
+            "secondary_web_internet_host": null,
+            "secondary_web_microsoft_endpoint": null,
+            "secondary_web_microsoft_host": null,
+            "sftp_enabled": false,
+            "share_properties": null,
+            "shared_access_key_enabled": true,
+            "static_website": null,
+            "table_encryption_key_type": "Service",
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "primary_access_key"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "primary_blob_connection_string"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "primary_connection_string"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "secondary_access_key"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "secondary_blob_connection_string"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "secondary_connection_string"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiI0In0=",
+          "dependencies": [
+            "azurerm_resource_group.rg",
+            "data.http.my_ip"
+          ]
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

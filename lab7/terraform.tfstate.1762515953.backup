@@ -1,0 +1,70 @@
+{
+  "version": 4,
+  "terraform_version": "1.13.3",
+  "serial": 88,
+  "lineage": "7dedcfc6-ce46-8433-2775-f59c866680b7",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "data",
+      "type": "http",
+      "name": "my_ip",
+      "provider": "provider[\"registry.terraform.io/hashicorp/http\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "body": "213.109.232.21",
+            "ca_cert_pem": null,
+            "client_cert_pem": null,
+            "client_key_pem": null,
+            "id": "https://api.ipify.org",
+            "insecure": null,
+            "method": null,
+            "request_body": null,
+            "request_headers": null,
+            "request_timeout_ms": null,
+            "response_body": "213.109.232.21",
+            "response_body_base64": "MjEzLjEwOS4yMzIuMjE=",
+            "response_headers": {
+              "Cf-Cache-Status": "DYNAMIC",
+              "Cf-Ray": "99ac70b1e8efeeba-WAW",
+              "Content-Type": "text/plain",
+              "Date": "Fri, 07 Nov 2025 11:20:14 GMT",
+              "Server": "cloudflare",
+              "Vary": "Origin"
+            },
+            "retry": null,
+            "status_code": 200,
+            "url": "https://api.ipify.org"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "rg",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/fb4f5919-9463-4245-877b-00a9eb54113c/resourceGroups/az104-rg7",
+            "location": "eastus",
+            "managed_by": "",
+            "name": "az104-rg7",
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
